@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロフィールサイト</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lora', serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1em;
+            color: #999;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .profile {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .profile img {
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .profile-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .icons a {
+            font-size: 1.5em;
+            color: #FFD700;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .icons a:hover {
+            color: #fff;
+        }
+
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.8em;
+            color: #666;
+            border-top: 1px solid #333;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            section h2 {
+                font-size: 1.5em;
+            }
+
+            .profile {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>manipulative</h1>
+        <p>css html Javascript</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2> <i class="fas fa-user"></i>  SNS</h2>
+            <div class="profile">
+         
+                <div class="profile-text">
+                    <p>僕は高校二年生のmanipulativeと申します。</p>
+                       <p>cssとjavascriptを主にしています。</p>
+                    <div class="icons">
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-briefcase">   プロジェクト</i></h2>
+            <p>あなたの過去のプロジェクトやポートフォリオを紹介するセクションです。</p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 ユーザー名 | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+    </footer>
+</body>
+</html>
